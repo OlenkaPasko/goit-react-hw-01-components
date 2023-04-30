@@ -11,7 +11,7 @@ export const Profile = ({ username, avatar, tag, location, stats }) => {
         <p className="location">{location}</p>
       </div>
 
-      <ul className={stats}>
+      <ul className="stats">
         <li>
           <span className="label">Followers</span>
           <span className="quantity">{stats.followers}</span>
@@ -28,11 +28,7 @@ export const Profile = ({ username, avatar, tag, location, stats }) => {
     </div>
   );
 };
-/*Product.propTypes = {
-  imgUrl: PropTypes.string,
-  name: PropTypes.string.isRequired,
-  price: PropTypes.number.isRequired,
-}; */
+
 Profile.propTypes = {
   username: PropTypes.string.isRequired,
   avatar: PropTypes.string.isRequired,

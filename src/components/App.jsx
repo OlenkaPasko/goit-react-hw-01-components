@@ -1,6 +1,6 @@
 import user from './jsons/user.json';
 import { Profile } from 'components/Profile/Profile';
-
+//import data from '/path/to/data.json';
 
 export const App = () => {
   return (
@@ -21,6 +21,7 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
+
     </div>
   );
 };
