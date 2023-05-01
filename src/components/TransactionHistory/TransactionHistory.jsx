@@ -40,4 +40,17 @@ const Table = ({ type, amount, currency, index }) => {
   );
 };
 
+TransactionHistory.propTypes = {
+  items: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  amount: PropTypes.string.isRequired,
+  currency: PropTypes.string.isRequired,
+};
 
+Table.propTypes = {
+  index: PropTypes.number.isRequired,
+  type: PropTypes.string.isRequired,
+  amount: PropTypes.string.isRequired,
+  currency: PropTypes.string.isRequired,
+};
