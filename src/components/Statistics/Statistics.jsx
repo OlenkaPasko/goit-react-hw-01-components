@@ -1,27 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export const Statistics = ({ title, stats}) => {
+export const Statistics = ({ title, stats }) => {
+  return (
     <section className="statistics">
-      <h2 className="title">{title}</h2>
-
+      <h2 className>{title}</h2>
       <ul className="stat-list">
-        <li className="item">
-          <span className="label">.docx</span>
-          <span className="percentage">4%</span>
-        </li>
-        <li className="item">
-          <span className="label">.mp3</span>
-          <span className="percentage">14%</span>
-        </li>
-        <li class="item">
-          <span className="label">.pdf</span>
-          <span className="percentage">41%</span>
-        </li>
-        <li className="item">
-          <span className="label">.mp4</span>
-          <span className="percentage">12%</span>
-        </li>
+        {stats.map(data => (
+          <li className="item" key={data.id}>
+            <span className="label">{data.label}</span>
+            <span className="percentage">{data.percentage}</span>
+          </li>
+        ))}
       </ul>
-    </section>;
+    </section>
+  );
+};
+
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  percentage: PropTypes.number.isRequired,
 };
