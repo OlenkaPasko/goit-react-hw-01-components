@@ -18,7 +18,6 @@ export const App = () => {
         fontSize: 40,
         color: '#010101',
       }}
-      className="App"
     >
       <Profile
         username={user.username}
