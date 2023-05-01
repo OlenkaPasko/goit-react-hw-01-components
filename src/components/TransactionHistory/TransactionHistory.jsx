@@ -30,7 +30,7 @@ export const TransactionHistory = ({ items }) => {
   );
 };
 
-const Table = ({ type, amount, currency, index }) => {
+const Table = ({ index, type, amount, currency }) => {
   return (
     <tr idx={index}>
       <td>{type}</td>
