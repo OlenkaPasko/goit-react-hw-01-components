@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export const Statistics = ({ title, stats }) => {
+export const Statistics = ({ stats, title }) => {
   return (
     <section className="statistics">
       {title && <h2 className>{title}</h2>}
@@ -19,8 +19,18 @@ export const Statistics = ({ title, stats }) => {
 
 Statistics.propTypes = {
   title: PropTypes.string,
-  stats: PropTypes.string.isRequired,
-  id: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired,
-  percentage: PropTypes.number.isRequired,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    }).isRequired
+  ).isRequired,
 };
+// Масив елементів певного типу
+//optionalArrayOf: PropTypes.arrayOf(PropTypes.number),
+//// Об'єкт вказаної форми
+//optionalObjectWithShape: PropTypes.shape({
+//color: PropTypes.string,
+//fontSize: PropTypes.number
+//}),
