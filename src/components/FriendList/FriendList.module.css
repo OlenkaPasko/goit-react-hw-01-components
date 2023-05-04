@@ -2,6 +2,10 @@
     font-weight: bolder;
     font-size: 20px;
     text-align: center;
-    margin:  auto;
+    margin: 0 auto;
     width: 270px;
+}
+.friend-list {
+display: flex;
+flex-wrap: wrap;
 }
