@@ -27,7 +27,6 @@ export const Image = styled.img`
   justify-content: center;
 `;
 
-
 export const Name = styled.span`
   color: black;
   margin-left: 10px;

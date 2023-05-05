@@ -1,14 +1,16 @@
 .transaction-history {
-width: 270px;
-margin: 0 auto;
-border-radius: 10px;
-box-shadow: rgb(0 0 0 / 20%) 0px 3px 3px -2px,
-        rgb(0 0 0 / 14%) 0px 3px 4px 0px, rgb(0 0 0 / 12%) 0px 1px 8px 0px;
+        width: 270px;
+        margin: 0 auto;
+        border-radius: 10px;
+        box-shadow: rgb(0 0 0 / 20%) 0px 3px 3px -2px,
+                rgb(0 0 0 / 14%) 0px 3px 4px 0px, rgb(0 0 0 / 12%) 0px 1px 8px 0px;
 }
+
 .thead {
-    background-color:#f6efef;
+        background-color: #f6efef;
 }
+
 tr {
-box-shadow: rgb(0 0 0 / 20%) 0px 3px 3px -2px,
-        rgb(0 0 0 / 14%) 0px 3px 4px 0px, rgb(0 0 0 / 12%) 0px 1px 8px 0px;
+        box-shadow: rgb(0 0 0 / 20%) 0px 3px 3px -2px,
+                rgb(0 0 0 / 14%) 0px 3px 4px 0px, rgb(0 0 0 / 12%) 0px 1px 8px 0px;
 }
