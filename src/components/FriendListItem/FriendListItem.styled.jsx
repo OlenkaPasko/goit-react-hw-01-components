@@ -1,10 +1,8 @@
 import styled from 'styled-components';
 
 export const Li = styled.li`
-  list-style: none;
-  margin: 0 auto;
-  margin-botom: 10px;
-
+  margin: auto;
+  margin-top: 10px;
   display: flex;
   align-items: center;
   width: 270px;
